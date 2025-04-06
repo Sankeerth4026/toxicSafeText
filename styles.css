@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.content {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.blur {
+    background: rgba(255, 255, 255, 0.717);
+    backdrop-filter: blur(5px);
+    color: transparent; /* Hide text */
+}

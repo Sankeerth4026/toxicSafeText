@@ -1,0 +1,46 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.blur-box {
+  position: absolute;
+  backdrop-filter: blur(18px) saturate(180%) brightness(0.6) contrast(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(180%) brightness(0.6) contrast(1.4);
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease-in-out;
+}
+
+.blur-box::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('public/Texture.jpg'); /* Adjust the path as necessary */
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8; /* adjust to your liking */
+  pointer-events: none;
+}
+
+
+.connection-status {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  background: green;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  font-size: 14px;
+  z-index: 10000;
+}
