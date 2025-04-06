@@ -10,7 +10,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-     "all": "node start-all.js"
+     "all": "node startall.js"
   },
   "dependencies": {
     "axios": "^1.8.4",
