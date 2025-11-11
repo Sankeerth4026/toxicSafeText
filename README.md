@@ -126,6 +126,7 @@ npm install
 npm start
 ```
 ## 🪜 Step 6: Folder Structure (Example)
+```bash
 toxicSafeText/
 ├── backend/
 │ ├── server.py
@@ -140,6 +141,7 @@ toxicSafeText/
 │ │ └── components/
 │ └── package.json
 └── README.md
+```
 
 🗂️ **Explanation:**
 - **backend/** → Handles OCR, toxicity detection, and WebSocket communication.  
