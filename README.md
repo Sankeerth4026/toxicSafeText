@@ -184,13 +184,6 @@ If you manage to stabilize the blur overlay or improve frame detection, please o
 
 ---
 
-## 🪜 Step 10: License
-
-**MIT License © 2025**  
-This project is open source — you can use, modify, and distribute it freely with proper attribution.
-
----
-
 ## 💬 Final Notes
 
 This project was a **learning experiment** exploring:
