@@ -67,17 +67,9 @@ Don’t unblur immediately after a single clean detection — add stability by c
 - If an area was toxic recently, keep it blurred for a few more frames (e.g., 5–10 seconds).  
 - Only remove the blur if it remains clean for multiple scans.  
 
-This prevents flicker and makes the app look smoother overall.
+This prevents flicker and makes the app look smoother overall
 
-**Pseudocode Example:**
-```python
-if region in toxic_cache:
-    toxic_cache[region]["frames_clean"] += 1
-    if toxic_cache[region]["frames_clean"] > 5:
-        remove_blur(region)
-else:
-    toxic_cache[region] = {"frames_clean": 0}
-### 4️⃣ Slow or timed detection cycle
+###4️⃣ Slow or timed detection cycle
 
 Instead of continuous frame-by-frame OCR scanning, you can run the detection process at controlled intervals.
 
@@ -124,12 +116,15 @@ This ensures:
 cd backend
 pip install -r requirements.txt
 python server.py
+```
+
 ### 💻 Frontend Setup (Electron + React)
 
 ```bash
 cd frontend
 npm install
 npm start
+```
 ## 🪜 Step 6: Folder Structure (Example)
 toxicSafeText/
 ├── backend/
